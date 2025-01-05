@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Search Box Extension",
+    "description": "Press a shortcut to show a search box in the middle of the screen.",
+    "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ],
+    "commands": {
+        "toggle-search-box": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+6"
+            },
+            "description": "Show search box in the center of the screen"
+        }
+    }
+}

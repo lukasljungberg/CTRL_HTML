@@ -1,0 +1,37 @@
+#search-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 9999;
+    width: 300px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+#search-input {
+    width: 80%;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: #222;
+    color: whitesmoke;
+}
+
+/* Highlight classes */
+.highlight {
+    outline: none;
+}
+
+.yellow-outline {
+    outline: 3px solid yellow !important;
+}
+
+.green-outline {
+    outline: 3px solid green !important;
+}
